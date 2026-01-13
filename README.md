@@ -1,5 +1,6 @@
 # Minecraft Bedrock Multi-Account Bot
 
+---------------
 A modular, multi-account Minecraft Bedrock bot built with [bedrock-protocol](https://github.com/PrismarineJS/bedrock-protocol).
 
 ## Features
