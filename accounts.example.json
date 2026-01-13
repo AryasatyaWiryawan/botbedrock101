@@ -1,0 +1,11 @@
+[
+    {
+        "username": "Bot1",
+        "offline": false,
+        "host": "optional-override.com"
+    },
+    {
+        "username": "Bot2",
+        "offline": false
+    }
+]

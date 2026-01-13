@@ -1,0 +1,22 @@
+{
+  "name": "botbedrock2",
+  "version": "1.0.0",
+  "description": "Improved Minecraft Bedrock Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "bot": "cross-env node -r dotenv/config index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bedrock-protocol": "^3.52.0",
+    "dotenv": "^17.2.3",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
+  }
+}
