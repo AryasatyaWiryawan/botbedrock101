@@ -29,7 +29,7 @@ npm -v
 Clone your repository (or upload files via SFTP/FileZilla).
 
 ```bash
-git clone https://github.com/yourusername/botbedrock2.git
+git clone https://github.com/AryasatyaWiryawan/botbedrock2.git
 cd botbedrock2
 npm install
 ```
@@ -93,7 +93,7 @@ pm2 startup
 1.  Open **PowerShell** or **Command Prompt**.
 2.  Clone your repo:
     ```powershell
-    git clone https://github.com/yourusername/botbedrock2.git
+    git clone https://github.com/AryasatyaWiryawan/botbedrock2.git
     cd botbedrock2
     ```
 3.  Install dependencies:

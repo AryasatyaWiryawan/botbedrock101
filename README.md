@@ -13,7 +13,7 @@ A modular, multi-account Minecraft Bedrock bot built with [bedrock-protocol](htt
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/botbedrock2.git
+    git clone https://github.com/AryasatyaWiryawan/botbedrock2.git
     cd botbedrock2
     ```
 
