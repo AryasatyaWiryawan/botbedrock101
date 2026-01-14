@@ -62,6 +62,7 @@ class Bot extends EventEmitter {
             username: this.config.username,
             offline: this.config.offline,
             version: this.config.version,
+            viewDistance: this.config.viewDistance > 0 ? this.config.viewDistance : undefined,
             connectTimeout: 15000,
             profilesFolder: this.config.profilesFolder,
             onMsaCode: (data) => {
@@ -135,6 +136,8 @@ class Bot extends EventEmitter {
         })
 
         c.on('text', (packet) => {
+            if (this.config.logLevel === 'error') return
+
             const content = packet.message
                 ?? packet.raw
                 ?? packet.whisper
@@ -151,7 +154,9 @@ class Bot extends EventEmitter {
                 return `${entry.success ? 'OK' : 'ERR'} ${body}`
             })
             const info = lines.length ? `\n${lines.join('\n')}` : ''
-            console.log(`[${this.config.username}] [command output] type=${packet.output_type} success=${packet.success_count}${info}`)
+            if (this.config.logLevel !== 'error') {
+                console.log(`[${this.config.username}] [command output] type=${packet.output_type} success=${packet.success_count}${info}`)
+            }
         })
 
         c.on('kick', (reason) => {

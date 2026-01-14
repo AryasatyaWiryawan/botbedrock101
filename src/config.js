@@ -28,7 +28,10 @@ const defaultEnv = {
         ? process.env.MC_AUTH_INPUT_LOOP === 'true'
         : !process.env.MC_SNEAK_TOGGLE,
     authInputIntervalMs: Number(process.env.MC_AUTH_INPUT_INTERVAL_MS ?? 50),
-    commandVersion: process.env.MC_COMMAND_VERSION || process.env.MC_VERSION || '1.0'
+    viewDistance: Number(process.env.MC_VIEW_DISTANCE ?? 0), // 0 = Server default (usually 10 or 32)
+    commandVersion: process.env.MC_COMMAND_VERSION || process.env.MC_VERSION || '1.0',
+    // 'verbose' (default): Log everything. 'info': Log important events. 'error': Log only errors.
+    logLevel: process.env.MC_LOG_LEVEL || 'verbose'
 }
 
 function loadConfig(overrides = {}) {

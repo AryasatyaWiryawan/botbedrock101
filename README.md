@@ -26,15 +26,14 @@ A modular, multi-account Minecraft Bedrock bot built with [bedrock-protocol](htt
     -   Copy `.env.example` to `.env`:
         ```bash
         cp .env.example .env
+3.  Configure the bot:
+    -   Copy `.env.example` to `.env`:
+        ```bash
+        cp .env.example .env
         ```
-    -   (Optional) Edit `.env` to set default values (Host, Port, Version).
-    -   Create `accounts.json` from `accounts.example.json` to define your bots:
-        ```json
-        [
-          { "username": "Bot1", "offline": false },
-          { "username": "Bot2", "offline": false }
-        ]
-        ```
+    -   Create `accounts.json` from `accounts.example.json`.
+
+> **Deploying on VPS/RDP?** Check out the [VPS Installation Guide](VPS_GUIDE.md) for detailed instructions.
 
 ## Usage
 
